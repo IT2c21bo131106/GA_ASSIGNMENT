@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Bites - Food Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Delicious Bites</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#order">Order Now</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Delicious Bites!</h1>
+            <p>Experience the best flavors delivered right to your doorstep.</p>
+            <button class="cta-button" onclick="location.href='#order'">Order Now</button>
+        </div>
+    </section>
+
+    <section id="menu" class="menu-section">
+        <h2>Our Delicious Menu</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <h3>Classic Burger</h3>
+                <p>Juicy patty with fresh veggies and special sauce.</p>
+                <span class="price">$12.99</span>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <h3>Margherita Pizza</h3>
+                <p>Traditional pizza with fresh mozzarella and basil.</p>
+                <span class="price">$15.50</span>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <h3>Spicy Chicken Tacos</h3>
+                <p>Grilled chicken, salsa, and a kick of spice.</p>
+                <span class="price">$10.00</span>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <h3>Vegan Buddha Bowl</h3>
+                <p>Healthy and delicious with fresh vegetables and grains.</p>
+                <span class="price">$11.75</span>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="order" class="order-section">
+        <h2>Place Your Order</h2>
+        <form id="orderForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+            <div class="form-group">
+                <label for="address">Delivery Address:</label>
+                <textarea id="address" name="address" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="order-details">Your Order (e.g., 1 Classic Burger, 2 Margherita Pizza):</label>
+                <textarea id="order-details" name="orderDetails" rows="6" required></textarea>
+            </div>
+            <button type="submit" class="submit-button">Submit Order</button>
+        </form>
+        <div id="orderConfirmation" class="hidden">
+            <p>Thank you for your order, <span id="customerName"></span>! We'll confirm your order shortly.</p>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <p>&copy; 2025 Delicious Bites. All rights reserved.</p>
+        <p>Contact us: info@deliciousbites.com | 123-456-7890</p>
+    </footer>
+
+    <button id="scrollToTopBtn" title="Go to top">&#x2191;</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
