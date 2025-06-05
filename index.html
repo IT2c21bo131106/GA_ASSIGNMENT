@@ -30,7 +30,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <li><a href="#home">Home</a></li>
                 <li><a href="#menu">Menu</a></li>
                 <li><a href="#order">Order Now</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#contact onclick="dataLayer.push({
+                           'event': 'nav_link_click',
+                           'link_destination': '#contact',
+                           'link_text_nav': 'Contact Us Link',
+                           'link_category': 'navigation'
+                       });">Contact</a></li>
             </ul>
         </nav>
     </header>
